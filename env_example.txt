@@ -1,0 +1,3 @@
+# Yandex Disk API Configuration
+YANDEX_OAUTH_TOKEN=your_oauth_token_here
+VIRTUAL_DISK_HASH=your_virtual_disk_hash

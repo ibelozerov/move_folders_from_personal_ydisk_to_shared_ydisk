@@ -2,16 +2,20 @@
 ​
 
 **Требования**
-Python 3.x с библиотеками requests, urllib.parse (установите: pip install requests).
+Python 3.x с библиотеками requests, python-dotenv (установите зависимости: pip install -r requirements.txt).
 
 OAuth-токен: https://oauth.yandex.ru/authorize?response_type=token&client_id=your_app_id.
 
 Hash виртуального диска (vd:<hash>): из URL общего диска, например vd:abc123.
 
-​**Использование**
-Замените TOKEN и VD_HASH.
+​**Настройка**
+1. Скопируйте `env_example.txt` в `.env`
+2. Заполните значения в `.env` файле:
+   - `YANDEX_OAUTH_TOKEN` - ваш OAuth токен
+   - `VIRTUAL_DISK_HASH` - hash общего диска
 
-Запустите: python script.py.
+​**Использование**
+Запустите: python move_to_shared_ydisk.py.
 
 Скрипт создаст структуру папок и переместит файлы. Асинхронные операции ждут завершения.
 ​
